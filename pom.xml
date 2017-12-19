@@ -47,6 +47,15 @@
 			<version>1.48</version>
 		</dependency>
 
+		<!-- Fix compile symbol not found exception, please make sure the version of
+		     protoc.exe is the same as protobuf-java
+		-->
+		<dependency>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<version>3.5.0</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.jpmml</groupId>
 			<artifactId>jpmml-converter</artifactId>

@@ -133,7 +133,7 @@ public class SavedModel implements AutoCloseable {
 
 		Runner runner = (session.runner()).fetch(name);
 
-		List<Tensor> tensors = runner.run();
+		List<Tensor<?>> tensors = runner.run();
 
 		return Iterables.getOnlyElement(tensors);
 	}
